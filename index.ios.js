@@ -1,14 +1,18 @@
-// Index.ioS.js -- place code in here for iOS
+// Index.ios.js -- place code in here for iOS
 
 
 // Import a library to help create a component
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component
 const App = () => (
-    <Header />
+  <View>
+    <Header headerText={'My Albums'} />
+    <AlbumList />
+  </View>
   );
 
 
