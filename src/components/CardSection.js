@@ -2,7 +2,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const Card = (props) => {
+const CardSection = (props) => {
   return (
     <View style={styles.containerStyle}>
       {props.children}
@@ -12,19 +12,15 @@ const Card = (props) => {
 
 const styles = {
   containerStyle: {
-    borderWidth: 1,
-    borderRadius: 4,
+    borderBottomWidth: 1,
+    padding: 5,
+    backgroundColor: '#fff',
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
     borderColor: '#ebebeb',
-    borderBottomWidth: 0,
-    shadowColor: '#2c3e50',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
-    elevation: 1,
-    marginLeft: 12,
-    marginRight: 12,
-    marginTop: 10,
+    position: 'relative'
   }
 };
 
 // Make the component available to other parts of the app
-export default Card;
+export default CardSection;
